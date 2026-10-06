@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/txt_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/edit_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Entrez votre âge"
+        android:inputType="number"
+        android:layout_below="@id/txt_greeting"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/bt_next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:layout_below="@id/edit_age"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

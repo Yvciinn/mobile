@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <RelativeLayout
+        android:id="@+id/header_movie4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:background="#3F51B5"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:text="🎬 CineBlog"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text="Nouvelle critique"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_movie4"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/lbl_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Titre du film"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_title"
+            android:layout_marginTop="4dp"
+            android:hint="Ex: Inception" />
+
+        <TextView
+            android:id="@+id/lbl_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_movie_title"
+            android:layout_marginTop="16dp"
+            android:text="Genre"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_genre"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/genre_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action" />
+
+            <RadioButton
+                android:id="@+id/genre_comedie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comédie" />
+
+            <RadioButton
+                android:id="@+id/genre_drame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drame" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/lbl_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group_genre"
+            android:layout_marginTop="16dp"
+            android:text="Ta critique"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_review"
+            android:layout_marginTop="4dp"
+            android:hint="Qu'as-tu pensé du film ?"
+            android:inputType="textMultiLine"
+            android:minLines="3" />
+
+        <Button
+            android:id="@+id/bt_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_review"
+            android:layout_marginTop="24dp"
+            android:text="Publier la critique" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
